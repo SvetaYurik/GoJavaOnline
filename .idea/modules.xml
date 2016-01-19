@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://D://GoJavaOnlineYurikSveta/GoJavaOnlineYurikSveta.iml" filepath="D://GoJavaOnlineYurikSveta/GoJavaOnlineYurikSveta.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GoJavaOnlineYurikSveta.iml" filepath="$PROJECT_DIR$/GoJavaOnlineYurikSveta.iml" />
     </modules>
   </component>
 </project>
