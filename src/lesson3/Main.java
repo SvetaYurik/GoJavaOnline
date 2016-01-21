@@ -1,7 +1,6 @@
 package lesson3;
 
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
@@ -9,7 +8,6 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         List<String> musicInstrument = Arrays.asList("drum", "guitare", "piano", "trumpet");
-        ;
 
         Scanner sc = new Scanner(System.in);
         while (true) {
@@ -20,7 +18,7 @@ public class Main {
                 if (musicInstrument.contains(instrument)) {
 
                     System.out.println("You have a good taste!");
-                }else {
+                } else {
                     throw new IllegalArgumentException();
 
                 }
@@ -31,20 +29,20 @@ public class Main {
                 String secondRockBandInstrument = sc.nextLine();
                 String thirdRockBandInstrument = sc.nextLine();
 
-                if((!(musicInstrument.contains(firstRockBandInstrument)))||
-                        (!(musicInstrument.contains(secondRockBandInstrument)))||
-                                (!(musicInstrument.contains(thirdRockBandInstrument)))){
+                if ((!(musicInstrument.contains(firstRockBandInstrument))) ||
+                        (!(musicInstrument.contains(secondRockBandInstrument))) ||
+                        (!(musicInstrument.contains(thirdRockBandInstrument)))) {
                     throw new IllegalArgumentException();
-                }else if ((firstRockBandInstrument.equals(secondRockBandInstrument)&&
-                        secondRockBandInstrument.equals(thirdRockBandInstrument))){
+                } else if ((firstRockBandInstrument.equals(secondRockBandInstrument) &&
+                        secondRockBandInstrument.equals(thirdRockBandInstrument))) {
                     throw new RochBandException();
-                }else {
+                } else {
                     System.out.println("OOO, good choice! You're the rock star");
                 }
 
             } catch (IllegalArgumentException e) {
                 System.out.println("Sorry! enter the instruments that are in stock!");
-            } catch (RochBandException e){
+            } catch (RochBandException e) {
                 System.out.println("problems with sound :( Choose three different instruments");
             }
 
